@@ -1,0 +1,2424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B1020">
+
+    <meta name="description" content="GRADEMATE is your smart academic companion. Calculate achievable examination targets, predict your SGPA and build a personalized study roadmap.">
+
+    <title>GRADEMATE – Your Smart Academic GPS</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Main JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="site-header" id="home">
+
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="#home" class="brand" aria-label="GRADEMATE homepage">
+                <span class="brand-icon" aria-hidden="true">🎓</span>
+                <span class="brand-name">GRADE<span>MATE</span></span>
+            </a>
+
+            <button
+                class="mobile-menu-toggle"
+                id="mobileMenuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primaryNavigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="primaryNavigation">
+
+                <a href="#dashboard" class="nav-link">Dashboard</a>
+                <a href="#planner" class="nav-link">CGPA Planner</a>
+                <a href="#analytics" class="nav-link">Analytics</a>
+                <a href="#study-plan" class="nav-link">Study Plan</a>
+
+                <div class="nav-actions">
+
+                    <button
+                        type="button"
+                        class="theme-toggle"
+                        id="themeToggle"
+                        aria-label="Toggle light and dark theme"
+                        title="Toggle theme">
+                        <span id="themeIcon" aria-hidden="true">☀</span>
+                    </button>
+
+                    <a href="#planner" class="btn btn-primary nav-cta">
+                        Get Started
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="hero-section" id="hero">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        YOUR PERSONAL ACADEMIC COMPANION
+                    </span>
+
+                    <h1>
+                        Your dream CGPA isn't a guess.
+                        <span>It's a strategy.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Track your academic performance, calculate achievable
+                        examination targets, and discover exactly where to
+                        focus your efforts.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#planner" class="btn btn-primary btn-large">
+                            Build My Academic Roadmap
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="#features" class="btn btn-secondary btn-large">
+                            Explore Features
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+
+                        <span class="trust-item">
+                            <span aria-hidden="true">✓</span>
+                            No registration required
+                        </span>
+
+                        <span class="trust-item">
+                            <span aria-hidden="true">✓</span>
+                            Free to use
+                        </span>
+
+                        <span class="trust-item">
+                            <span aria-hidden="true">✓</span>
+                            Your data stays in your browser
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero dashboard preview -->
+
+                <div class="hero-visual" aria-label="Academic dashboard preview">
+
+                    <div class="floating-card hero-preview-card">
+
+                        <div class="preview-card-header">
+                            <span>Academic overview</span>
+                            <span class="status-dot" aria-label="Illustrative preview"></span>
+                        </div>
+
+                        <div class="preview-main-stat">
+
+                            <div>
+                                <span class="stat-label">Projected SGPA</span>
+                                <strong class="preview-sgpa">8.24</strong>
+                            </div>
+
+                            <span class="preview-trend">
+                                <span aria-hidden="true">↗</span> On track
+                            </span>
+
+                        </div>
+
+                        <div class="preview-progress">
+
+                            <div class="progress-heading">
+                                <span>Target progress</span>
+                                <span>82%</span>
+                            </div>
+
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width:82%"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="preview-subjects">
+
+                            <div class="preview-subject">
+                                <span class="subject-dot purple"></span>
+                                Mathematics
+                                <strong>Priority</strong>
+                            </div>
+
+                            <div class="preview-subject">
+                                <span class="subject-dot green"></span>
+                                Programming
+                                <strong>On track</strong>
+                            </div>
+
+                            <div class="preview-subject">
+                                <span class="subject-dot blue"></span>
+                                Computer Science
+                                <strong>Good</strong>
+                            </div>
+
+                        </div>
+
+                        <p class="preview-disclaimer">
+                            Illustrative preview – not actual student results.
+                        </p>
+
+                    </div>
+
+                    <div class="hero-decoration hero-decoration-one"></div>
+                    <div class="hero-decoration hero-decoration-two"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURES INTRODUCTION
+        ========================== -->
+
+        <section class="features-section section-padding" id="features">
+
+            <div class="container">
+
+                <div class="section-heading text-center">
+
+                    <span class="eyebrow">SMARTER ACADEMIC PLANNING</span>
+
+                    <h2>
+                        Everything you need to
+                        <span>stay ahead.</span>
+                    </h2>
+
+                    <p>
+                        More than a marks calculator. A complete academic
+                        planning experience built around your performance.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon purple-icon" aria-hidden="true">
+                            🎯
+                        </div>
+
+                        <h3>Smart CGPA Planner</h3>
+
+                        <p>
+                            Discover the examination marks you need to achieve
+                            your desired academic target.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon blue-icon" aria-hidden="true">
+                            📊
+                        </div>
+
+                        <h3>Performance Predictor</h3>
+
+                        <p>
+                            Explore conservative, expected and optimistic
+                            semester performance projections.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon green-icon" aria-hidden="true">
+                            🧠
+                        </div>
+
+                        <h3>Subject Priority Analyzer</h3>
+
+                        <p>
+                            Identify subjects that need more attention and
+                            discover opportunities for improvement.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon orange-icon" aria-hidden="true">
+                            ⚡
+                        </div>
+
+                        <h3>What-if Simulator</h3>
+
+                        <p>
+                            Experiment with different examination marks and
+                            instantly see how your projected SGPA changes.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DASHBOARD OVERVIEW
+        ========================== -->
+
+        <section class="dashboard-section section-padding" id="dashboard">
+
+            <div class="container">
+
+                <div class="section-heading section-heading-row">
+
+                    <div>
+                        <span class="eyebrow">YOUR ACADEMIC SPACE</span>
+                        <h2>Semester overview</h2>
+                        <p>Your academic performance at a glance.</p>
+                    </div>
+
+                    <span class="semester-badge" id="semesterBadge">
+                        Semester 1
+                    </span>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+
+                        <div class="stat-card-top">
+                            <span class="stat-card-label">Current SGPA</span>
+                            <span class="stat-card-icon">📈</span>
+                        </div>
+
+                        <strong class="stat-card-value" id="currentSgpa">
+                            --
+                        </strong>
+
+                        <span class="stat-card-note" id="currentSgpaNote">
+                            Calculate your performance
+                        </span>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-card-top">
+                            <span class="stat-card-label">Target SGPA</span>
+                            <span class="stat-card-icon">🎯</span>
+                        </div>
+
+                        <strong class="stat-card-value" id="dashboardTarget">
+                            --
+                        </strong>
+
+                        <span class="stat-card-note">
+                            Your academic goal
+                        </span>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-card-top">
+                            <span class="stat-card-label">Total Credits</span>
+                            <span class="stat-card-icon">📚</span>
+                        </div>
+
+                        <strong class="stat-card-value" id="totalCredits">
+                            --
+                        </strong>
+
+                        <span class="stat-card-note">
+                            Across all subjects
+                        </span>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-card-top">
+                            <span class="stat-card-label">Priority Subjects</span>
+                            <span class="stat-card-icon">⚠️</span>
+                        </div>
+
+                        <strong class="stat-card-value" id="priorityCount">
+                            --
+                        </strong>
+
+                        <span class="stat-card-note">
+                            Need additional attention
+                        </span>
+
+                    </article>
+
+                </div>
+
+
+                <div class="dashboard-empty-state" id="dashboardEmptyState">
+
+                    <div class="empty-icon" aria-hidden="true">📋</div>
+
+                    <h3>Your academic dashboard is waiting.</h3>
+
+                    <p>
+                        Enter your examination marks to unlock your
+                        personalized performance dashboard.
+                    </p>
+
+                    <a href="#planner" class="btn btn-primary">
+                        Enter Your Marks
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SMART CGPA PLANNER
+        ========================== -->
+
+        <section class="planner-section section-padding" id="planner">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">STEP 01 · YOUR ACADEMIC DATA</span>
+
+                    <h2>Build your CGPA roadmap.</h2>
+
+                    <p>
+                        Enter your semester details and examination marks.
+                        We'll help you calculate realistic targets for
+                        your upcoming examinations.
+                    </p>
+
+                </div>
+
+
+                <form id="academicForm" class="academic-form" novalidate>
+
+
+                    <!-- Academic configuration -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-heading">
+
+                            <div>
+                                <span class="step-number">01</span>
+                                <h3>Academic configuration</h3>
+                            </div>
+
+                            <span class="form-hint">
+                                Configure your semester
+                            </span>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="universityName">
+                                    University / Grading system
+                                </label>
+
+                                <select id="universityName" name="university">
+                                    <option value="custom">Custom grading system</option>
+                                    <option value="curaj">Central University of Rajasthan</option>
+                                </select>
+
+                                <small class="field-hint">
+                                    Verify the official grading rules before calculating.
+                                </small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="semesterSelect">
+                                    Semester
+                                </label>
+
+                                <select id="semesterSelect" name="semester">
+
+                                    <option value="1">Semester 1</option>
+                                    <option value="2">Semester 2</option>
+                                    <option value="3">Semester 3</option>
+                                    <option value="4">Semester 4</option>
+                                    <option value="5">Semester 5</option>
+                                    <option value="6">Semester 6</option>
+                                    <option value="7">Semester 7</option>
+                                    <option value="8">Semester 8</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="cia1Max">CIA 1 maximum marks</label>
+
+                                <input
+                                    type="number"
+                                    id="cia1Max"
+                                    name="cia1Max"
+                                    value="20"
+                                    min="1"
+                                    max="100"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="cia2Max">CIA 2 maximum marks</label>
+
+                                <input
+                                    type="number"
+                                    id="cia2Max"
+                                    name="cia2Max"
+                                    value="20"
+                                    min="1"
+                                    max="100"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="eseMax">ESE maximum marks</label>
+
+                                <input
+                                    type="number"
+                                    id="eseMax"
+                                    name="eseMax"
+                                    value="60"
+                                    min="1"
+                                    max="100"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="totalMax">Total maximum marks</label>
+
+                                <input
+                                    type="number"
+                                    id="totalMax"
+                                    name="totalMax"
+                                    value="100"
+                                    readonly
+                                    aria-describedby="totalMarksHint">
+
+                                <small class="field-hint" id="totalMarksHint">
+                                    Automatically calculated from CIA and ESE.
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Optional cumulative CGPA information -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-heading">
+
+                            <div>
+                                <span class="step-number">02</span>
+                                <h3>Previous academic performance</h3>
+                            </div>
+
+                            <span class="optional-badge">Optional for first semester</span>
+
+                        </div>
+
+
+                        <p class="section-description">
+                            If you already have semester results, enter your
+                            previous CGPA and completed credits to calculate
+                            your cumulative CGPA.
+                        </p>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="previousCgpa">
+                                    Previous CGPA
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="previousCgpa"
+                                    name="previousCgpa"
+                                    min="0"
+                                    max="10"
+                                    step="0.01"
+                                    placeholder="e.g. 7.50">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="previousCredits">
+                                    Previously completed credits
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="previousCredits"
+                                    name="previousCredits"
+                                    min="0"
+                                    step="1"
+                                    placeholder="e.g. 20">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Six subject inputs -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-heading">
+
+                            <div>
+                                <span class="step-number">03</span>
+                                <h3>Enter your subject marks</h3>
+                            </div>
+
+                            <span class="subject-count-badge">
+                                6 subjects
+                            </span>
+
+                        </div>
+
+
+                        <p class="section-description">
+                            Enter your credits and CIA marks for all six
+                            subjects. Leave ESE empty if the examination
+                            has not taken place yet.
+                        </p>
+
+
+                        <div class="marks-legend">
+
+                            <span>
+                                <span class="legend-dot purple"></span>
+                                CIA 1
+                            </span>
+
+                            <span>
+                                <span class="legend-dot blue"></span>
+                                CIA 2
+                            </span>
+
+                            <span>
+                                <span class="legend-dot green"></span>
+                                ESE
+                            </span>
+
+                        </div>
+
+
+                        <div class="subject-input-list" id="subjectInputList">
+
+
+                            <!-- Subject 1 -->
+
+                            <article class="subject-input-card" data-subject-index="0">
+
+                                <div class="subject-card-header">
+
+                                    <span class="subject-number">01</span>
+
+                                    <div class="subject-card-title">
+                                        <h4>Subject 1</h4>
+                                        <span>Enter subject details</span>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="subject-fields">
+
+                                    <div class="form-group subject-name-field">
+
+                                        <label for="subjectName0">
+                                            Subject name
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="subjectName0"
+                                            name="subjectName0"
+                                            placeholder="e.g. Mathematics"
+                                            required>
+
+                                    </div>
+
+
+                                    <div class="form-group credit-field">
+
+                                        <label for="credits0">Credits</label>
+
+                                        <input
+                                            type="number"
+                                            id="credits0"
+                                            name="credits0"
+                                            min="0.5"
+                                            max="30"
+                                            step="0.5"
+                                            placeholder="4"
+                                            required>
+
+                                    </div>
+
+
+                                    <div class="form-group">
+
+                                        <label for="cia1_0">CIA 1</label>
+
+                                        <input
+                                            type="number"
+                                            id="cia1_0"
+                                            name="cia1_0"
+                                            min="0"
+                                            max="20"
+                                            placeholder="0–20"
+                                            required>
+
+                                    </div>
+
+
+                                    <div class="form-group">
+
+                                        <label for="cia2_0">CIA 2</label>
+
+                                        <input
+                                            type="number"
+                                            id="cia2_0"
+                                            name="cia2_0"
+                                            min="0"
+                                            max="20"
+                                            placeholder="0–20"
+                                            required>
+
+                                    </div>
+
+
+                                    <div class="form-group">
+
+                                        <label for="ese_0">ESE</label>
+
+                                        <input
+                                            type="number"
+                                            id="ese_0"
+                                            name="ese_0"
+                                            min="0"
+                                            max="60"
+                                            placeholder="Pending"
+                                            aria-describedby="eseHint0">
+
+                                        <small class="field-hint" id="eseHint0">
+                                            Leave empty if pending.
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Subject 2 -->
+
+                            <article class="subject-input-card" data-subject-index="1">
+
+                                <div class="subject-card-header">
+
+                                    <span class="subject-number">02</span>
+
+                                    <div class="subject-card-title">
+                                        <h4>Subject 2</h4>
+                                        <span>Enter subject details</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="subject-fields">
+
+                                    <div class="form-group subject-name-field">
+                                        <label for="subjectName1">Subject name</label>
+                                        <input type="text" id="subjectName1" name="subjectName1" placeholder="e.g. Computer Science" required>
+                                    </div>
+
+                                    <div class="form-group credit-field">
+                                        <label for="credits1">Credits</label>
+                                        <input type="number" id="credits1" name="credits1" min="0.5" max="30" step="0.5" placeholder="4" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia1_1">CIA 1</label>
+                                        <input type="number" id="cia1_1" name="cia1_1" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia2_1">CIA 2</label>
+                                        <input type="number" id="cia2_1" name="cia2_1" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ese_1">ESE</label>
+                                        <input type="number" id="ese_1" name="ese_1" min="0" max="60" placeholder="Pending">
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Subject 3 -->
+
+                            <article class="subject-input-card" data-subject-index="2">
+
+                                <div class="subject-card-header">
+                                    <span class="subject-number">03</span>
+                                    <div class="subject-card-title">
+                                        <h4>Subject 3</h4>
+                                        <span>Enter subject details</span>
+                                    </div>
+                                </div>
+
+                                <div class="subject-fields">
+
+                                    <div class="form-group subject-name-field">
+                                        <label for="subjectName2">Subject name</label>
+                                        <input type="text" id="subjectName2" name="subjectName2" placeholder="e.g. Programming" required>
+                                    </div>
+
+                                    <div class="form-group credit-field">
+                                        <label for="credits2">Credits</label>
+                                        <input type="number" id="credits2" name="credits2" min="0.5" max="30" step="0.5" placeholder="4" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia1_2">CIA 1</label>
+                                        <input type="number" id="cia1_2" name="cia1_2" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia2_2">CIA 2</label>
+                                        <input type="number" id="cia2_2" name="cia2_2" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ese_2">ESE</label>
+                                        <input type="number" id="ese_2" name="ese_2" min="0" max="60" placeholder="Pending">
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Subject 4 -->
+
+                            <article class="subject-input-card" data-subject-index="3">
+
+                                <div class="subject-card-header">
+                                    <span class="subject-number">04</span>
+                                    <div class="subject-card-title">
+                                        <h4>Subject 4</h4>
+                                        <span>Enter subject details</span>
+                                    </div>
+                                </div>
+
+                                <div class="subject-fields">
+
+                                    <div class="form-group subject-name-field">
+                                        <label for="subjectName3">Subject name</label>
+                                        <input type="text" id="subjectName3" name="subjectName3" placeholder="e.g. English" required>
+                                    </div>
+
+                                    <div class="form-group credit-field">
+                                        <label for="credits3">Credits</label>
+                                        <input type="number" id="credits3" name="credits3" min="0.5" max="30" step="0.5" placeholder="2" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia1_3">CIA 1</label>
+                                        <input type="number" id="cia1_3" name="cia1_3" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia2_3">CIA 2</label>
+                                        <input type="number" id="cia2_3" name="cia2_3" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ese_3">ESE</label>
+                                        <input type="number" id="ese_3" name="ese_3" min="0" max="60" placeholder="Pending">
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Subject 5 -->
+
+                            <article class="subject-input-card" data-subject-index="4">
+
+                                <div class="subject-card-header">
+                                    <span class="subject-number">05</span>
+                                    <div class="subject-card-title">
+                                        <h4>Subject 5</h4>
+                                        <span>Enter subject details</span>
+                                    </div>
+                                </div>
+
+                                <div class="subject-fields">
+
+                                    <div class="form-group subject-name-field">
+                                        <label for="subjectName4">Subject name</label>
+                                        <input type="text" id="subjectName4" name="subjectName4" placeholder="e.g. Statistics" required>
+                                    </div>
+
+                                    <div class="form-group credit-field">
+                                        <label for="credits4">Credits</label>
+                                        <input type="number" id="credits4" name="credits4" min="0.5" max="30" step="0.5" placeholder="3" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia1_4">CIA 1</label>
+                                        <input type="number" id="cia1_4" name="cia1_4" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia2_4">CIA 2</label>
+                                        <input type="number" id="cia2_4" name="cia2_4" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ese_4">ESE</label>
+                                        <input type="number" id="ese_4" name="ese_4" min="0" max="60" placeholder="Pending">
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Subject 6 -->
+
+                            <article class="subject-input-card" data-subject-index="5">
+
+                                <div class="subject-card-header">
+                                    <span class="subject-number">06</span>
+                                    <div class="subject-card-title">
+                                        <h4>Subject 6</h4>
+                                        <span>Enter subject details</span>
+                                    </div>
+                                </div>
+
+                                <div class="subject-fields">
+
+                                    <div class="form-group subject-name-field">
+                                        <label for="subjectName5">Subject name</label>
+                                        <input type="text" id="subjectName5" name="subjectName5" placeholder="e.g. Environmental Studies" required>
+                                    </div>
+
+                                    <div class="form-group credit-field">
+                                        <label for="credits5">Credits</label>
+                                        <input type="number" id="credits5" name="credits5" min="0.5" max="30" step="0.5" placeholder="2" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia1_5">CIA 1</label>
+                                        <input type="number" id="cia1_5" name="cia1_5" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="cia2_5">CIA 2</label>
+                                        <input type="number" id="cia2_5" name="cia2_5" min="0" max="20" placeholder="0–20" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ese_5">ESE</label>
+                                        <input type="number" id="ese_5" name="ese_5" min="0" max="60" placeholder="Pending">
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Target CGPA configuration -->
+
+                    <div class="form-section target-section">
+
+                        <div class="form-section-heading">
+
+                            <div>
+                                <span class="step-number">04</span>
+                                <h3>Set your academic target</h3>
+                            </div>
+
+                        </div>
+
+
+                        <div class="target-input-wrapper">
+
+                            <div class="form-group target-input-group">
+
+                                <label for="targetSgpa">
+                                    Desired semester SGPA
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="targetSgpa"
+                                    name="targetSgpa"
+                                    min="0"
+                                    max="10"
+                                    step="0.1"
+                                    value="8.5"
+                                    required>
+
+                                <small class="field-hint">
+                                    Enter a target between 0 and 10.
+                                </small>
+
+                            </div>
+
+
+                            <div class="target-slider-wrapper">
+
+                                <label for="targetSgpaSlider">
+                                    Adjust your target
+                                </label>
+
+                                <input
+                                    type="range"
+                                    id="targetSgpaSlider"
+                                    min="0"
+                                    max="10"
+                                    step="0.1"
+                                    value="8.5"
+                                    aria-label="Desired semester SGPA slider">
+
+                                <div class="slider-labels">
+                                    <span>0.0</span>
+                                    <span>5.0</span>
+                                    <span>10.0</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Grading configuration -->
+
+                    <div class="form-section grading-section">
+
+                        <div class="form-section-heading">
+
+                            <div>
+                                <span class="step-number">05</span>
+                                <h3>Grade-point configuration</h3>
+                            </div>
+
+                            <span class="optional-badge">
+                                Verify official rules
+                            </span>
+
+                        </div>
+
+
+                        <p class="section-description">
+                            Enter your university's actual grade boundaries.
+                            Grade points are not automatically assumed from
+                            the CIA/ESE marks structure.
+                        </p>
+
+
+                        <div class="grading-table-wrapper">
+
+                            <table class="grading-table">
+
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Grade</th>
+                                        <th scope="col">Minimum marks</th>
+                                        <th scope="col">Maximum marks</th>
+                                        <th scope="col">Grade points</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="gradingTableBody">
+
+                                    <tr>
+                                        <td>A+</td>
+                                        <td><input type="number" name="gradeMin[]" value="90" aria-label="A plus minimum marks"></td>
+                                        <td><input type="number" name="gradeMax[]" value="100" aria-label="A plus maximum marks"></td>
+                                        <td><input type="number" name="gradePoint[]" value="10" aria-label="A plus grade points"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>A</td>
+                                        <td><input type="number" name="gradeMin[]" value="80" aria-label="A minimum marks"></td>
+                                        <td><input type="number" name="gradeMax[]" value="89.99" step="0.01" aria-label="A maximum marks"></td>
+                                        <td><input type="number" name="gradePoint[]" value="9" aria-label="A grade points"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>B+</td>
+                                        <td><input type="number" name="gradeMin[]" value="70" aria-label="B plus minimum marks"></td>
+                                        <td><input type="number" name="gradeMax[]" value="79.99" step="0.01" aria-label="B plus maximum marks"></td>
+                                        <td><input type="number" name="gradePoint[]" value="8" aria-label="B plus grade points"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>B</td>
+                                        <td><input type="number" name="gradeMin[]" value="60" aria-label="B minimum marks"></td>
+                                        <td><input type="number" name="gradeMax[]" value="69.99" step="0.01" aria-label="B maximum marks"></td>
+                                        <td><input type="number" name="gradePoint[]" value="7" aria-label="B grade points"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>C</td>
+                                        <td><input type="number" name="gradeMin[]" value="50" aria-label="C minimum marks"></td>
+                                        <td><input type="number" name="gradeMax[]" value="59.99" step="0.01" aria-label="C maximum marks"></td>
+                                        <td><input type="number" name="gradePoint[]" value="6" aria-label="C grade points"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>D</td>
+                                        <td><input type="number" name="gradeMin[]" value="40" aria-label="D minimum marks"></td>
+                                        <td><input type="number" name="gradeMax[]" value="49.99" step="0.01" aria-label="D maximum marks"></td>
+                                        <td><input type="number" name="gradePoint[]" value="5" aria-label="D grade points"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>F</td>
+                                        <td><input type="number" name="gradeMin[]" value="0" aria-label="F minimum marks"></td>
+                                        <td><input type="number" name="gradeMax[]" value="39.99" step="0.01" aria-label="F maximum marks"></td>
+                                        <td><input type="number" name="gradePoint[]" value="0" aria-label="F grade points"></td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+
+                        <div class="grading-note alert alert-warning">
+
+                            <span class="alert-icon" aria-hidden="true">⚠</span>
+
+                            <p>
+                                The displayed grade boundaries are editable
+                                demonstration defaults, not verified official
+                                university rules. Confirm your institution's
+                                grade scale and independent passing conditions
+                                before relying on predictions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Form feedback -->
+
+                    <div
+                        class="form-feedback"
+                        id="formFeedback"
+                        role="alert"
+                        aria-live="assertive"
+                        hidden>
+                    </div>
+
+
+                    <!-- Form buttons -->
+
+                    <div class="form-actions">
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="loadDemoData">
+                            Load Demo Data
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="btn btn-secondary"
+                            id="resetForm">
+                            Reset Form
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-large"
+                            id="generateRoadmap">
+                            Generate My Academic Roadmap
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                    </div>
+
+
+                    <p class="privacy-note">
+                        🔒 Your academic information stays in your browser.
+                        No account or external server is required.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ACADEMIC ROADMAP RESULTS
+        ========================== -->
+
+        <section
+            class="roadmap-section section-padding"
+            id="roadmap"
+            aria-labelledby="roadmapTitle"
+            hidden>
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">STEP 02 · YOUR RESULTS</span>
+
+                    <h2 id="roadmapTitle">
+                        Your academic roadmap.
+                    </h2>
+
+                    <p>
+                        Here is your personalized examination strategy
+                        based on your academic performance.
+                    </p>
+
+                </div>
+
+
+                <!-- Calculation status -->
+
+                <div
+                    class="result-status"
+                    id="resultStatus"
+                    role="status"
+                    aria-live="polite">
+                </div>
+
+
+                <!-- Main target summary -->
+
+                <div class="result-summary-grid">
+
+                    <article class="result-highlight-card">
+
+                        <span class="result-label">Your target SGPA</span>
+
+                        <strong id="resultTargetSgpa">--</strong>
+
+                        <span>Desired academic performance</span>
+
+                    </article>
+
+
+                    <article class="result-highlight-card">
+
+                        <span class="result-label">Expected SGPA</span>
+
+                        <strong id="resultExpectedSgpa">--</strong>
+
+                        <span>Based on projected performance</span>
+
+                    </article>
+
+
+                    <article class="result-highlight-card">
+
+                        <span class="result-label">Target feasibility</span>
+
+                        <strong id="resultFeasibility">--</strong>
+
+                        <span id="resultFeasibilityDescription">
+                            Awaiting calculation
+                        </span>
+
+                    </article>
+
+
+                    <article class="result-highlight-card">
+
+                        <span class="result-label">Cumulative CGPA</span>
+
+                        <strong id="resultCumulativeCgpa">--</strong>
+
+                        <span id="cumulativeCgpaNote">
+                            Available when previous credits are entered
+                        </span>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Personalized insight -->
+
+                <div class="insight-card">
+
+                    <div class="insight-icon" aria-hidden="true">💡</div>
+
+                    <div>
+
+                        <h3>Your personalized insight</h3>
+
+                        <p id="personalizedInsight">
+                            Your academic recommendations will appear here
+                            after calculation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feasibility alert -->
+
+                <div
+                    class="feasibility-alert"
+                    id="feasibilityAlert"
+                    role="status"
+                    aria-live="polite"
+                    hidden>
+                </div>
+
+
+                <!-- Subject target table -->
+
+                <div class="result-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <h3>Your subject-wise ESE targets</h3>
+                            <p>
+                                Marks to target in upcoming examinations.
+                            </p>
+                        </div>
+
+                        <span class="panel-tag">Personalized</span>
+
+                    </div>
+
+
+                    <div class="responsive-table-wrapper">
+
+                        <table class="result-table">
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">Subject</th>
+                                    <th scope="col">Credits</th>
+                                    <th scope="col">CIA Total</th>
+                                    <th scope="col">Suggested ESE</th>
+                                    <th scope="col">Expected Total</th>
+                                    <th scope="col">Grade Point</th>
+                                    <th scope="col">Priority</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="subjectTargetTableBody">
+
+                                <!-- Generated by script.js -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="table-note">
+                        Suggested ESE marks are estimates, not guaranteed
+                        examination outcomes. Actual requirements depend on
+                        grade boundaries and passing rules.
+                    </div>
+
+                </div>
+
+
+                <!-- Marks gap -->
+
+                <div class="result-panel">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Your marks gap tracker</h3>
+                            <p>Understand the remaining marks needed.</p>
+                        </div>
+                    </div>
+
+                    <div id="marksGapList" class="marks-gap-list">
+
+                        <!-- Generated by script.js -->
+
+                    </div>
+
+                </div>
+
+
+                <!-- Report actions -->
+
+                <div class="result-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="downloadReport">
+                        Download Academic Report
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        id="editAcademicData">
+                        Edit My Marks
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PERFORMANCE ANALYTICS
+        ========================== -->
+
+        <section
+            class="analytics-section section-padding"
+            id="analytics">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">STEP 03 · PERFORMANCE INSIGHTS</span>
+
+                    <h2>Understand your academic future.</h2>
+
+                    <p>
+                        Explore how your current performance could translate
+                        into your semester results.
+                    </p>
+
+                </div>
+
+
+                <!-- Analytics empty state -->
+
+                <div class="analytics-empty-state" id="analyticsEmptyState">
+
+                    <span class="empty-icon" aria-hidden="true">📈</span>
+
+                    <h3>Your performance insights will appear here.</h3>
+
+                    <p>
+                        Complete your academic planner to unlock personalized
+                        predictions and performance analytics.
+                    </p>
+
+                    <a href="#planner" class="btn btn-secondary">
+                        Enter Academic Data
+                    </a>
+
+                </div>
+
+
+                <!-- Analytics dashboard -->
+
+                <div class="analytics-content" id="analyticsContent" hidden>
+
+
+                    <!-- Prediction scenarios -->
+
+                    <div class="prediction-section">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <h3>SGPA prediction</h3>
+                                <p>
+                                    Three possible performance scenarios.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="prediction-grid">
+
+                            <article class="prediction-card conservative-card">
+
+                                <span class="prediction-indicator">
+                                    CONSERVATIVE
+                                </span>
+
+                                <strong id="conservativeSgpa">--</strong>
+
+                                <p>
+                                    Slightly lower than your historical
+                                    performance.
+                                </p>
+
+                            </article>
+
+
+                            <article class="prediction-card expected-card">
+
+                                <span class="prediction-indicator">
+                                    EXPECTED
+                                </span>
+
+                                <strong id="predictedSgpa">--</strong>
+
+                                <p>
+                                    Continuation of your relative
+                                    performance.
+                                </p>
+
+                            </article>
+
+
+                            <article class="prediction-card optimistic-card">
+
+                                <span class="prediction-indicator">
+                                    OPTIMISTIC
+                                </span>
+
+                                <strong id="optimisticSgpa">--</strong>
+
+                                <p>
+                                    Moderate improvement over your
+                                    previous performance.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Prediction chart -->
+
+                    <div class="analytics-chart-grid">
+
+                        <article class="chart-panel">
+
+                            <div class="panel-heading">
+                                <div>
+                                    <h3>Performance scenarios</h3>
+                                    <p>Compare your projected SGPA.</p>
+                                </div>
+                            </div>
+
+                            <div class="chart-container">
+
+                                <canvas
+                                    id="predictionChart"
+                                    role="img"
+                                    aria-label="Chart comparing conservative, expected and optimistic SGPA predictions">
+                                    Performance prediction chart.
+                                </canvas>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="chart-panel">
+
+                            <div class="panel-heading">
+                                <div>
+                                    <h3>Subject performance</h3>
+                                    <p>Compare marks across your subjects.</p>
+                                </div>
+                            </div>
+
+                            <div class="chart-container">
+
+                                <canvas
+                                    id="subjectPerformanceChart"
+                                    role="img"
+                                    aria-label="Chart comparing subject-wise academic performance">
+                                    Subject performance chart.
+                                </canvas>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <p class="analytics-disclaimer">
+                        These are estimates based on your entered data and
+                        configured grading rules, not guaranteed results.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SUBJECT PRIORITY ANALYZER
+        ========================== -->
+
+        <section
+            class="priority-section section-padding"
+            id="priority">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">STEP 04 · STUDY SMARTER</span>
+
+                    <h2>Know where to focus.</h2>
+
+                    <p>
+                        Not every subject needs the same amount of attention.
+                        Discover where your efforts can make the biggest
+                        academic difference.
+                    </p>
+
+                </div>
+
+
+                <div class="priority-empty-state" id="priorityEmptyState">
+
+                    <span class="empty-icon" aria-hidden="true">🎯</span>
+
+                    <h3>Your subject priorities are waiting.</h3>
+
+                    <p>
+                        Enter your marks to discover which subjects
+                        deserve more attention.
+                    </p>
+
+                </div>
+
+
+                <div class="priority-content" id="priorityContent" hidden>
+
+
+                    <!-- Priority summary -->
+
+                    <div class="priority-summary">
+
+                        <div class="priority-summary-icon" aria-hidden="true">
+                            🧠
+                        </div>
+
+                        <div>
+                            <h3>Your personalized study priorities</h3>
+                            <p id="prioritySummaryText">
+                                Your priority recommendations will appear here.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Priority legend -->
+
+                    <div class="priority-legend">
+
+                        <span class="priority-label high-priority">
+                            High priority
+                        </span>
+
+                        <span class="priority-label medium-priority">
+                            Medium priority
+                        </span>
+
+                        <span class="priority-label maintain-priority">
+                            Maintain
+                        </span>
+
+                    </div>
+
+
+                    <!-- Subject priority cards -->
+
+                    <div class="priority-cards" id="priorityCards">
+
+                        <!-- Subject cards generated by script.js -->
+
+                    </div>
+
+
+                    <!-- Top recommendations -->
+
+                    <div class="recommendation-panel">
+
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Your top three recommendations</h3>
+                                <p>Focus on these areas first.</p>
+                            </div>
+                        </div>
+
+                        <ol
+                            class="recommendation-list"
+                            id="recommendationList">
+
+                            <!-- Generated by script.js -->
+
+                        </ol>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHAT-IF SIMULATOR
+        ========================== -->
+
+        <section
+            class="simulator-section section-padding"
+            id="simulator">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">STEP 05 · EXPERIMENT WITH YOUR FUTURE</span>
+
+                    <h2>What if you scored differently?</h2>
+
+                    <p>
+                        Change your expected examination marks and instantly
+                        discover how your academic performance could change.
+                    </p>
+
+                </div>
+
+
+                <div class="simulator-empty-state" id="simulatorEmptyState">
+
+                    <span class="empty-icon" aria-hidden="true">⚡</span>
+
+                    <h3>Ready to experiment?</h3>
+
+                    <p>
+                        Generate your academic roadmap first to activate
+                        the What-if Simulator.
+                    </p>
+
+                </div>
+
+
+                <div class="simulator-content" id="simulatorContent" hidden>
+
+
+                    <div class="simulator-layout">
+
+
+                        <!-- Controls -->
+
+                        <div class="simulator-controls">
+
+                            <div class="panel-heading">
+                                <div>
+                                    <h3>Adjust your ESE marks</h3>
+                                    <p>
+                                        Select a subject and experiment.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="simulatorSubject">
+                                    Select subject
+                                </label>
+
+                                <select id="simulatorSubject">
+                                    <option value="">Choose a subject</option>
+                                </select>
+
+                            </div>
+
+
+                            <div class="simulator-slider-group">
+
+                                <div class="slider-value-heading">
+
+                                    <label for="eseSimulatorSlider">
+                                        Expected ESE marks
+                                    </label>
+
+                                    <strong id="simulatorMarksValue">30 / 60</strong>
+
+                                </div>
+
+                                <input
+                                    type="range"
+                                    id="eseSimulatorSlider"
+                                    min="0"
+                                    max="60"
+                                    value="30"
+                                    step="1">
+
+                                <div class="slider-labels">
+                                    <span>0</span>
+                                    <span>30</span>
+                                    <span>60</span>
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                                id="resetSimulator">
+                                Reset Simulation
+                            </button>
+
+                        </div>
+
+
+                        <!-- Simulation results -->
+
+                        <div class="simulator-results">
+
+                            <div class="simulation-result-card">
+
+                                <span class="stat-label">
+                                    Original projected SGPA
+                                </span>
+
+                                <strong id="originalSimulationSgpa">
+                                    --
+                                </strong>
+
+                            </div>
+
+
+                            <div class="simulation-result-card highlighted">
+
+                                <span class="stat-label">
+                                    Updated projected SGPA
+                                </span>
+
+                                <strong id="updatedSimulationSgpa">
+                                    --
+                                </strong>
+
+                            </div>
+
+
+                            <div class="simulation-result-card">
+
+                                <span class="stat-label">
+                                    SGPA difference
+                                </span>
+
+                                <strong id="simulationDifference">
+                                    --
+                                </strong>
+
+                            </div>
+
+
+                            <div
+                                class="simulation-feedback"
+                                id="simulationFeedback"
+                                role="status"
+                                aria-live="polite">
+
+                                Adjust the slider to explore different outcomes.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STUDY ACTION PLAN
+        ========================== -->
+
+        <section
+            class="study-plan-section section-padding"
+            id="study-plan">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">STEP 06 · TAKE ACTION</span>
+
+                    <h2>Turn your targets into a study plan.</h2>
+
+                    <p>
+                        Allocate your study time intelligently using
+                        personalized subject priorities.
+                    </p>
+
+                </div>
+
+
+                <div class="study-empty-state" id="studyEmptyState">
+
+                    <span class="empty-icon" aria-hidden="true">📅</span>
+
+                    <h3>Your study plan starts here.</h3>
+
+                    <p>
+                        Generate your roadmap to receive a suggested
+                        subject-wise study schedule.
+                    </p>
+
+                </div>
+
+
+                <div class="study-content" id="studyContent" hidden>
+
+
+                    <!-- Study time configuration -->
+
+                    <div class="study-config-panel">
+
+                        <div class="form-group">
+
+                            <label for="weeklyStudyHours">
+                                How many hours can you study each week?
+                            </label>
+
+                            <input
+                                type="number"
+                                id="weeklyStudyHours"
+                                min="1"
+                                max="100"
+                                value="20">
+
+                            <small class="field-hint">
+                                Adjust your available weekly study time.
+                            </small>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="generateStudyPlan">
+                            Generate Study Schedule
+                        </button>
+
+                    </div>
+
+
+                    <!-- Weekly allocation -->
+
+                    <div class="study-plan-panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <h3>Your weekly study allocation</h3>
+                                <p>
+                                    Recommended hours based on your subject
+                                    priorities.
+                                </p>
+                            </div>
+
+                            <span class="total-study-hours" id="totalStudyHours">
+                                20 hours
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            class="study-allocation-list"
+                            id="studyAllocationList">
+
+                            <!-- Generated by script.js -->
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Weekly action checklist -->
+
+                    <div class="study-plan-panel">
+
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Your study checklist</h3>
+                                <p>
+                                    Keep track of your weekly preparation.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="study-checklist" id="studyChecklist">
+
+                            <label class="checklist-item">
+                                <input type="checkbox" name="studyTask">
+                                <span>Review your previous CIA mistakes.</span>
+                            </label>
+
+                            <label class="checklist-item">
+                                <input type="checkbox" name="studyTask">
+                                <span>Revise the most challenging topics.</span>
+                            </label>
+
+                            <label class="checklist-item">
+                                <input type="checkbox" name="studyTask">
+                                <span>Practice questions under examination conditions.</span>
+                            </label>
+
+                            <label class="checklist-item">
+                                <input type="checkbox" name="studyTask">
+                                <span>Evaluate your weekly progress.</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ACHIEVEMENTS
+        ========================== -->
+
+        <section class="achievements-section section-padding" id="achievements">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">CELEBRATE YOUR PROGRESS</span>
+
+                    <h2>Every improvement counts.</h2>
+
+                    <p>
+                        Build consistent academic habits and celebrate
+                        your milestones along the way.
+                    </p>
+
+                </div>
+
+
+                <div class="achievements-grid">
+
+                    <article class="achievement-card" id="achievementFirstRoadmap">
+
+                        <span class="achievement-icon" aria-hidden="true">🏁</span>
+
+                        <h3>First Roadmap</h3>
+
+                        <p>
+                            Generate your first academic roadmap.
+                        </p>
+
+                        <span class="achievement-status" id="firstRoadmapStatus">
+                            Locked
+                        </span>
+
+                    </article>
+
+
+                    <article class="achievement-card" id="achievementTarget">
+
+                        <span class="achievement-icon" aria-hidden="true">🎯</span>
+
+                        <h3>Goal Setter</h3>
+
+                        <p>
+                            Set your academic target and create a plan.
+                        </p>
+
+                        <span class="achievement-status" id="targetAchievementStatus">
+                            Locked
+                        </span>
+
+                    </article>
+
+
+                    <article class="achievement-card" id="achievementStudy">
+
+                        <span class="achievement-icon" aria-hidden="true">📚</span>
+
+                        <h3>Study Strategist</h3>
+
+                        <p>
+                            Generate your personalized study schedule.
+                        </p>
+
+                        <span class="achievement-status" id="studyAchievementStatus">
+                            Locked
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL CTA
+        ========================== -->
+
+        <section class="final-cta-section section-padding">
+
+            <div class="container">
+
+                <div class="final-cta-card">
+
+                    <span class="eyebrow">YOUR NEXT MOVE STARTS HERE</span>
+
+                    <h2>
+                        Don't just chase marks.
+                        <span>Build your strategy.</span>
+                    </h2>
+
+                    <p>
+                        Understand your performance, set achievable targets,
+                        and take control of your academic journey.
+                    </p>
+
+                    <a href="#planner" class="btn btn-primary btn-large">
+                        Build My Roadmap
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         RESET CONFIRMATION MODAL
+    ========================== -->
+
+    <dialog class="confirmation-modal" id="resetConfirmationModal">
+
+        <div class="modal-content">
+
+            <div class="modal-icon" aria-hidden="true">⚠️</div>
+
+            <h2>Reset your academic data?</h2>
+
+            <p>
+                This will clear your current form inputs and calculated
+                results. Your saved browser data will also need to be
+                reset separately.
+            </p>
+
+            <div class="modal-actions">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    id="cancelReset">
+                    Cancel
+                </button>
+
+                <button
+                    type="button"
+                    class="btn btn-danger"
+                    id="confirmReset">
+                    Confirm Reset
+                </button>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- =========================
+         NOTIFICATION CONTAINER
+    ========================== -->
+
+    <div
+        class="notification-container"
+        id="notificationContainer"
+        aria-live="polite"
+        aria-atomic="true">
+
+        <!-- Notifications generated by script.js -->
+
+    </div>
+
+
+    <!-- =========================
+         SAVE STATUS
+    ========================== -->
+
+    <div class="save-status" id="saveStatus" role="status" aria-live="polite">
+
+        <span class="save-status-icon" aria-hidden="true">✓</span>
+
+        <span id="saveStatusText">Your data is stored locally.</span>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer" id="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+
+                <!-- Brand information -->
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="brand">
+
+                        <span class="brand-icon" aria-hidden="true">🎓</span>
+
+                        <span class="brand-name">
+                            GRADE<span>MATE</span>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Your smart academic companion. Turn your examination
+                        marks into an achievable strategy for academic success.
+                    </p>
+
+                    <span class="footer-tagline">
+                        Don't just know your marks. Know your next move.
+                    </span>
+
+                </div>
+
+
+                <!-- Quick links -->
+
+                <div class="footer-links">
+
+                    <h3>Explore</h3>
+
+                    <a href="#dashboard">Dashboard</a>
+                    <a href="#planner">CGPA Planner</a>
+                    <a href="#analytics">Performance Analytics</a>
+                    <a href="#priority">Subject Priorities</a>
+
+                </div>
+
+
+                <!-- Tools -->
+
+                <div class="footer-links">
+
+                    <h3>Your Tools</h3>
+
+                    <a href="#simulator">What-if Simulator</a>
+                    <a href="#study-plan">Study Planner</a>
+                    <a href="#achievements">Achievements</a>
+
+                </div>
+
+
+                <!-- About -->
+
+                <div class="footer-links">
+
+                    <h3>About GRADEMATE</h3>
+
+                    <a href="#features">Our Features</a>
+                    <a href="#planner">Get Started</a>
+
+                    <span class="footer-tech">
+                        Built with HTML, CSS and JavaScript.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Disclaimer -->
+
+            <div class="footer-disclaimer">
+
+                <strong>Academic disclaimer</strong>
+
+                <p>
+                    GRADEMATE provides estimated academic guidance based
+                    on the information entered by students. Predictions
+                    are not official university results. Actual grades,
+                    SGPA and CGPA depend on the institution's official
+                    grading rules, credit structure and examination
+                    requirements. Always verify your university's
+                    regulations.
+                </p>
+
+            </div>
+
+
+            <!-- Footer bottom -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear">2026</span> GRADEMATE.
+                    All rights reserved.
+                </p>
+
+                <a href="#home" class="back-to-top">
+                    Back to top ↑
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
